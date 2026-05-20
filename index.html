@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Private E-Mail-Infrastruktur für Familie Ternis und ternis-edv.de">
     <title>ternismail.de | Private Domain</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -37,15 +38,16 @@
     <main class="max-w-5xl mx-auto">
         
         <div class="mb-10 relative">
+            <label for="searchInput" class="sr-only">Projekte und Domains durchsuchen</label>
             <input type="text" id="searchInput" placeholder="Projekte und Domains durchsuchen..." 
                    class="w-full bg-white border border-slate-200 text-slate-800 pl-14 pr-14 py-4 rounded-xl shadow-sm focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent transition-all text-lg">
             <div class="absolute left-5 top-1/2 transform -translate-y-1/2 text-slate-400">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                 </svg>
             </div>
-            <button id="clearSearch" class="hidden absolute right-5 top-1/2 transform -translate-y-1/2 text-slate-400 hover:text-slate-600 transition-colors focus:outline-none">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <button id="clearSearch" aria-label="Suche leeren" class="hidden absolute right-5 top-1/2 transform -translate-y-1/2 text-slate-400 hover:text-slate-600 transition-colors focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
                 </svg>
             </button>
@@ -79,8 +81,26 @@
 
     </main>
 
-    <footer class="max-w-5xl mx-auto mt-20 pt-8 border-t border-slate-200 text-center text-slate-500 text-sm">
-        <p>&copy; <span id="year"></span> Fabian Ternis. Alle Rechte vorbehalten.</p>
+    <footer class="max-w-5xl mx-auto mt-20 bg-gradient-to-br from-slate-900 via-slate-800 to-emerald-900 text-white rounded-t-3xl p-8 md:p-12 shadow-2xl relative overflow-hidden border-t border-x border-slate-700/50">
+        <div class="relative z-10 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="flex items-center gap-3">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-emerald-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                </svg>
+                <div>
+                    <h3 class="text-xl font-bold tracking-tight text-white">ternismail.de</h3>
+                    <p class="text-emerald-400 text-sm font-medium">Private Mail-Infrastruktur</p>
+                </div>
+            </div>
+            <div class="flex flex-col md:flex-row gap-4 md:gap-6 text-center md:text-left text-sm text-slate-300 font-medium">
+                <a href="https://ternis-edv.de" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-400 transition-colors duration-200">ternis-edv.de</a>
+                <span class="hidden md:inline text-slate-600">|</span>
+                <a href="https://xpsystems.eu" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-400 transition-colors duration-200">xpsystems.eu</a>
+            </div>
+        </div>
+        <div class="relative z-10 mt-8 pt-8 border-t border-slate-700/50 text-center text-slate-400 text-sm">
+            <p>&copy; <span id="year"></span> Fabian Ternis. Alle Rechte vorbehalten.</p>
+        </div>
     </footer>
 
     <script>
