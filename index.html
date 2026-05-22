@@ -40,7 +40,7 @@
         <div class="mb-10 relative">
             <label for="searchInput" class="sr-only">Projekte und Domains durchsuchen</label>
             <input type="text" id="searchInput" placeholder="Projekte und Domains durchsuchen..." 
-                   class="w-full bg-white border border-slate-200 text-slate-800 pl-14 pr-14 py-4 rounded-xl shadow-sm focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent transition-all text-lg">
+                   class="w-full bg-white border border-slate-200 text-slate-800 pl-14 pr-14 py-4 rounded-xl shadow-sm focus:outline-none focus:ring-4 focus:ring-emerald-500/20 focus:border-emerald-500 hover:border-emerald-300 transition-all duration-300 text-lg">
             <div class="absolute left-5 top-1/2 transform -translate-y-1/2 text-slate-400">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
@@ -81,7 +81,7 @@
 
     </main>
 
-    <footer class="max-w-5xl mx-auto mt-20 bg-gradient-to-br from-slate-900 via-slate-800 to-emerald-900 text-white rounded-t-3xl p-8 md:p-12 shadow-2xl relative overflow-hidden border-t border-x border-slate-700/50">
+    <footer class="max-w-5xl mx-auto mt-20 bg-gradient-to-br from-slate-900 via-slate-800 to-emerald-900 text-white rounded-t-3xl p-10 md:p-14 shadow-2xl relative overflow-hidden border-t border-x border-slate-700/50">
         <div class="relative z-10 flex flex-col md:flex-row justify-between items-center gap-6">
             <div class="flex items-center gap-3">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-emerald-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
@@ -99,6 +99,8 @@
             </div>
         </div>
         <div class="relative z-10 mt-8 pt-8 border-t border-slate-700/50 text-center text-slate-400 text-sm">
+            <p class="mb-2 text-slate-300">Diese Domain wird bereitgestellt von <a href="https://dnbx.de" target="_blank" class="text-emerald-400 hover:text-emerald-300 font-semibold transition-colors">dnbx.de</a>.</p>
+            <p class="mb-4 text-xs text-slate-500">dnbx.de ist ein Service von Fabian Ternis ("Domain Box").</p>
             <p>&copy; <span id="year"></span> Fabian Ternis. Alle Rechte vorbehalten.</p>
         </div>
     </footer>
@@ -155,9 +157,9 @@
 
             return `
                 <a href="${href}" target="_blank" rel="noopener noreferrer" 
-                   class="link-card flex flex-col h-full bg-white border border-slate-200 rounded-xl p-5 hover:shadow-xl hover:border-emerald-200 hover:-translate-y-1 transition-all duration-200 group">
+                   class="link-card flex flex-col h-full bg-white border border-slate-200 rounded-2xl p-6 hover:shadow-2xl hover:border-emerald-300 hover:-translate-y-2 transition-all duration-300 group">
                     <div class="flex items-center justify-between mb-3">
-                        <h3 class="font-bold text-emerald-600 truncate mr-2">${item.url}</h3>
+                        <h3 class="font-bold text-slate-800 group-hover:text-emerald-600 transition-colors truncate mr-2">${item.url}</h3>
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-slate-300 group-hover:text-emerald-500 transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                         </svg>
