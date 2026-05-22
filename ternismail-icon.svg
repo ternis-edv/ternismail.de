@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+  <defs>
+    <linearGradient id="emeraldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34d399" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Base Plate (slate-900) -->
+  <rect width="256" height="256" rx="56" fill="#0f172a" />
+  
+  <!-- T-Mail Geometric Path -->
+  <g fill="none" stroke="url(#emeraldGrad)" stroke-width="20" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Envelope Outer Shell -->
+    <rect x="48" y="76" width="160" height="104" rx="16" />
+    <!-- Envelope Top Flap / Crossbar of 'T' -->
+    <path d="M48 92 L128 144 L208 92" />
+    <!-- Vertical Infrastructure Stem / Stem of 'T' -->
+    <path d="M128 144 L128 180" />
+  </g>
+</svg>
