@@ -4,6 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Private E-Mail-Infrastruktur für Familie Ternis und ternis-edv.de">
+    <meta name="keywords" content="ternismail, E-Mail, Infrastruktur, Familie Ternis, ternis-edv">
+    <meta name="theme-color" content="#1e293b">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ternismail.de/">
+    <meta property="og:title" content="ternismail.de | Private Domain">
+    <meta property="og:description" content="Private E-Mail-Infrastruktur für Familie Ternis und ternis-edv.de">
+    <meta property="og:image" content="https://ternismail.de/ternismail-wordmark.svg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://ternismail.de/">
+    <meta property="twitter:title" content="ternismail.de | Private Domain">
+    <meta property="twitter:description" content="Private E-Mail-Infrastruktur für Familie Ternis und ternis-edv.de">
+    <meta property="twitter:image" content="https://ternismail.de/ternismail-wordmark.svg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/ternismail-icon.svg">
+    <link rel="apple-touch-icon" href="/ternismail-icon.svg">
+    <link rel="canonical" href="https://ternismail.de/">
+
     <title>ternismail.de | Private Domain</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -26,7 +48,28 @@
                     </svg>
                     <p class="text-emerald-400 font-bold tracking-wider text-sm uppercase">Private Infrastruktur</p>
                 </div>
-                <h1 class="text-4xl md:text-5xl font-extrabold mb-4 tracking-tight drop-shadow-sm">ternismail.de</h1>
+                <h1 class="mb-4 drop-shadow-sm">
+                    <span class="sr-only">ternismail.de</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 160" class="h-16 md:h-20 w-auto">
+                        <defs>
+                            <linearGradient id="emeraldGradWM" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stop-color="#34d399" />
+                                <stop offset="100%" stop-color="#059669" />
+                            </linearGradient>
+                        </defs>
+                        <g transform="translate(20, 20) scale(0.46875)">
+                            <rect width="256" height="256" rx="56" fill="#0f172a" />
+                            <g fill="none" stroke="url(#emeraldGradWM)" stroke-width="20" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="48" y="76" width="160" height="104" rx="16" />
+                                <path d="M48 92 L128 144 L208 92" />
+                                <path d="M128 144 L128 180" />
+                            </g>
+                        </g>
+                        <text x="160" y="106" font-family="Inter, system-ui, sans-serif" font-size="84" letter-spacing="-0.02em">
+                            <tspan fill="#f8fafc" font-weight="800">ternis</tspan><tspan fill="#34d399" font-weight="800">mail</tspan><tspan fill="#94a3b8" font-weight="500">.de</tspan>
+                        </text>
+                    </svg>
+                </h1>
                 <p class="text-slate-300 text-lg max-w-2xl leading-relaxed font-light">
                     Diese Domain wird ausschließlich für die private E-Mail-Kommunikation der <strong class="text-white font-medium">Familie Ternis</strong>
                     sowie für autorisierte Mitglieder von <strong class="text-white font-medium">ternis-edv.de</strong> verwendet.
@@ -84,8 +127,19 @@
     <footer class="max-w-5xl mx-auto mt-20 bg-gradient-to-br from-slate-900 via-slate-800 to-emerald-900 text-white rounded-t-3xl p-10 md:p-14 shadow-2xl relative overflow-hidden border-t border-x border-slate-700/50">
         <div class="relative z-10 flex flex-col md:flex-row justify-between items-center gap-6">
             <div class="flex items-center gap-3">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-emerald-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" class="h-10 w-10">
+                    <defs>
+                        <linearGradient id="emeraldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#34d399" />
+                            <stop offset="100%" stop-color="#059669" />
+                        </linearGradient>
+                    </defs>
+                    <rect width="256" height="256" rx="56" fill="#0f172a" />
+                    <g fill="none" stroke="url(#emeraldGrad)" stroke-width="20" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="48" y="76" width="160" height="104" rx="16" />
+                        <path d="M48 92 L128 144 L208 92" />
+                        <path d="M128 144 L128 180" />
+                    </g>
                 </svg>
                 <div>
                     <h3 class="text-xl font-bold tracking-tight text-white">ternismail.de</h3>
